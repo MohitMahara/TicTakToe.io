@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tic Tac Toe</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Font awesome -->
+   <script src="https://kit.fontawesome.com/3bf8c869a3.js" crossorigin="anonymous"></script>
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@400;500&family=Roboto&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet">
+
+</head>
+
+<body>
+   <!-- Nav bar  -->
+   <nav>
+      <div class="nav-container flex">
+         <div class="brand flex">
+            <h2>TicTacToe.com</h2>
+         </div>
+         <ul class="item-list flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+
+      </div>
+   </nav>
+
+   <!-- Main Container -->
+
+   <main class="main-container">
+      <div class="game-container flex">
+
+         <div class="game-screen ">
+              <div class="line"></div>
+            <div class="box border-top border-left "> <span class="box-text"></span></div>
+            <div class="box border-top"> <span class="box-text"></span></div>
+            <div class="box border-top border-right"> <span class="box-text"></span></div>
+            <div class="box border-left"> <span class="box-text"></span></div>
+            <div class="box"> <span class="box-text"></span></div>
+            <div class="box border-right"> <span class="box-text"></span></div>
+            <div class="box  border-left border-bottom"><span class="box-text"></span></div>
+            <div class="box border-bottom"> <span class="box-text"></span></div>
+            <div class="box border-right border-bottom"><span class="box-text"></span>
+            </div>
+         </div>
+
+         <div class="game-info">
+            <h1 class="game-heading">Welcome to Tic Tac Toe.</h1>
+
+            <div class="info-div">
+               <span class="info-text">Turn For</span><span class="info"> X</span>
+
+            </div>
+            <button id="reset">Reset</button>
+            <div class="imgBox">
+
+
+            </div>
+
+
+         </div>
+      </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+   <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

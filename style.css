@@ -1,0 +1,222 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1586941963134-6486b671b809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+/* nav bar */
+nav {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 13px 40px rgba(0, 0, 0, 0.8);
+}
+
+.nav-container {
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.item-list {
+    gap: 40px;
+    padding-right: 40px;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+
+
+/* Main container */
+
+.main-container {
+    padding: 40px;
+    height: 90vh;
+    width: 100vw;
+}
+
+.game-container {
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.game-screen {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: rgb(159, 159, 247);
+}
+
+.game-info {
+    padding: 0 34px;
+
+}
+
+.game-heading {
+    font-size: 3.5rem;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    letter-spacing: 2px;
+
+}
+
+.info-text {
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-shadow: 0 0 3px blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.info {
+    text-shadow: 0 0 3px green;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#reset {
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    background-color: purple;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 20px;
+    letter-spacing: 2px;
+}
+
+.line{
+    background-color: white;
+    width: 0;
+    height: 4px;
+    position:absolute;
+    transition: width 1s ease-in-out;
+}
+
+/* Utility classes*/
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.border-right {
+    border-right: 0;
+}
+
+.border-left {
+    border-left: 0;
+}
+
+.border-top {
+    border-top: 0;
+}
+
+.border-bottom {
+    border-bottom: 0;
+}
+
+
+/* media querys */
+
+@media screen and (max-width:769px) {
+    
+.game-heading{
+    font-size: 2.2rem;
+}
+
+.info-text{
+    font-size: 1.5rem;
+}
+
+
+.info{
+    font-size: 1.5rem;
+}
+
+#reset{
+   margin-left: 0px;
+}
+
+
+}
+
+@media screen and (max-width:655px) {
+ 
+.item-list{
+    display: none;
+}
+
+.game-heading{
+    font-size: 1.5rem;
+}
+
+.game-container{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.game-screen {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+}
+
+.box{
+    font-size: 12vw;
+}
+
+.info,.info-text{
+padding-block: 10px;
+}
+
+.main-container{
+    padding-top: 20px;
+}
+
+#reset{
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+}
